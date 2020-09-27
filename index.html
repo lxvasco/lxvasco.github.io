@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="encabezado">            
+            <h1 class="encabezado-nombre">Ximena Vasco</h1>
+            <h2 class="encabezado-profesion">Web Developed</h2>
+            <input id="menu-flag" class="encabezado-hiddenAction" type="checkbox" />
+            <label class="encabezado-action" for="menu-flag"><i class='bx bx-menu'></i> </label>
+            <ul class="encabezado-menu">
+                <li class="encabezado-opcion"><a href="#presentacion" class="encabezado-link">
+                        <h3>I am</h3>
+                    </a></li>
+                <li class="encabezado-opcion"><a href="#tecnologias" class="encabezado-link">
+                        <h3>Software</h3>
+                    </a></li>
+                <li class="encabezado-opcion"><a href="#proyectos" class="encabezado-link">
+                        <h3>Projects</h3>
+                    </a></li>
+                <li class="encabezado-opcion"><a href="#contactame" class="encabezado-link">
+                        <h3>Contact</h3>
+                    </a></li>
+            </ul>            
+        </nav>
+        
+    </header>
+
+    <section>
+        <div class="presentacion">
+            <div class="presentacion-titulo">
+                <h2 class="presentacion-nombre" id="presentacion">I am</h2>
+            </div>
+            <div class="presentacion-texto">
+                <p class="presentacion-descripcion">
+                    Soy Ximena Vasco, Ingeniera de Control de profesión y desarrolladora web en formación. Apasionada por la tecnología y el aprendizaje continuo.   
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="tecnologias">
+            <div class="tecnologias-titulo">
+                <h2 class="tecnologias-nombre" id="tecnologias">Software</h2>
+            </div>
+            <div class="tecnologias-texto">
+                <ul class="tecnologias-lista">
+                    <li class="tecnologias-1"><img src="https://cdn.pixabay.com/photo/2016/11/19/22/25/html5-1841458_960_720.png" alt="html" class="tecnologias-imagen"></li>
+                    <li class="tecnologias-2"><img src="https://cdn.pixabay.com/photo/2016/11/19/23/00/css3-1841590_960_720.png" alt="css" class="tecnologias-imagen"></li>
+                    <li class="tecnologias-4"><img src="https://www.albertoluebbert.com/blog/wp-content/uploads/2018/11/lenguaje-c.png" alt="c" class="tecnologias-imagen"></li>
+                    <li class="tecnologias-5"><img src="https://conceptosclaros.com/wp-content/uploads/2016/07/RStudio-Ball.png" alt="R" class="tecnologias-imagen"></li>
+                    <li class="tecnologias-6"><img src="https://image.flaticon.com/icons/png/512/919/919852.png" alt="python" class="tecnologias-imagen"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="proyectos">
+            <div class="proyectos-titulo">
+                <h2 class="proyectos-nombre" id="proyectos">Projects</h2>
+            </div>
+            <div class="proyectos-texto">
+                <ul class="proyectos-lista">
+                    <li class="proyectos-1">Artista<img src="" alt="html" class="proyectos-imagen"></li>
+                    <li class="proyectos-2">Evento<img src="" alt="css" class="proyectos-imagen"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <form action="" class="formulario">
+        <fieldset>
+            <legend class="formulario-titulo" id="contactame">Contact</legend>
+            <div class="formulario-datos">
+                <p><label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" placeholder="Nombre"
+                            required></label></p>
+                <p><label for="apellido">Apellido: <input type="text" name="apellido" id="apellido"
+                            placeholder="Apellido" required></label></p>
+                <p><label for="correo">Email: <input type="email" name="correo" id="correo" placeholder="Email"
+                            required></label></p>
+                <p><label for="telefono">Teléfono de Contacto: <input type="telephone" name="telefono" id="telefono"
+                            placeholder="Teléfono"></label></p>
+                <p><label for="mensaje">Mensaje:<textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="50"
+                            rows="10" maxlength="300"></textarea></label></p>
+            </div>
+            <div class="formulario-boton">
+                <input type="submit" value="Enviar" class="formulario-enviar">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

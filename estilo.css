@@ -1,0 +1,368 @@
+.encabezado {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/00/digitization-5140069_960_720.jpg);
+  background-size: 97vw;
+  background-position: center;
+  height: 35vh;
+}
+
+.encabezado-nombre {
+  position: absolute;
+  top: 0;
+  width: 97vw;
+}
+
+.encabezado-profesion {
+  position: absolute;
+  font-size: 1em;
+  top: 7vh;
+  width: 97vw;
+}
+
+.encabezado-menu {
+  position: absolute;
+  background-color: #039bcf;
+  width: 33vw;
+  top: 13vh;
+  left: 33vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.encabezado-opcion {
+  display: block;
+  height: 5vh;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.encabezado-opcion:hover {
+  background-color: black;
+}
+
+.encabezado-action {
+  position: absolute;
+  top: 10vh;
+  width: 97vw;
+  text-align: center;
+  padding: 0,5em;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 1px  black;
+  font-weight: bold;
+}
+
+.encabezado-hiddenAction {
+  display: none;
+}
+
+.encabezado-hiddenAction:checked ~ .encabezado-menu {
+  max-height: 60vh;
+}
+
+@media screen and (min-width: 768px) {
+  .encabezado-action {
+    display: none;
+  }
+  .encabezado-nombre {
+    display: inline-block;
+    width: 45vw;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .encabezado-profesion {
+    display: inline-block;
+    width: 45vw;
+    font-size: 1em;
+    position: absolute;
+    top: 5vw;
+  }
+  .encabezado-menu {
+    max-height: initial;
+    display: inline-block;
+    width: 97vw;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    top: 1vw;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .encabezado-opcion {
+    display: inline-block;
+    padding: 0.3em;
+  }
+  .encabezado-opcion:hover {
+    background-color: transparent;
+  }
+}
+
+.encabezado-nombre {
+  text-align: center;
+  color: #2E4053;
+  -webkit-text-stroke: 1px white;
+  font-family: 'Baloo Tammudu 2', cursive;
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+}
+
+.encabezado-profesion {
+  text-align: center;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.encabezado-link {
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  text-decoration: none;
+}
+
+.presentacion-nombre {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 0.5em;
+  text-shadow: 2px 2px 4px white;
+}
+
+.presentacion-descripcion {
+  text-align: justify;
+  color: white;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 1.5em;
+}
+
+.tecnologias-nombre {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 0.5em;
+  text-shadow: 2px 2px 4px white;
+}
+
+.proyectos-nombre {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 0.5em;
+  text-shadow: 2px 2px 4px white;
+}
+
+@media screen and (min-width: 768px) {
+  .encabezado-nombre {
+    font-size: 4em;
+  }
+  .encabezado-profesion {
+    font-size: 2em;
+    top: 8vw;
+  }
+  .encabezado-link {
+    font-size: 1.3em;
+  }
+}
+
+.presentacion {
+  padding: 0;
+  margin: 0;
+}
+
+.presentacion-titulo {
+  border-bottom: 5px solid #039bcf;
+}
+
+@media screen and (min-width: 768px) {
+  .presentacion-titulo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 48%;
+    text-align: center;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .presentacion-texto {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 48%;
+    text-align: center;
+  }
+  .presentacion-nombre {
+    font-size: 5em;
+  }
+}
+
+.proyectos {
+  padding: 0;
+  margin: 0;
+}
+
+.proyectos-titulo {
+  border-bottom: 5px solid #039bcf;
+}
+
+.proyectos-texto {
+  display: inline-block;
+  width: 97vw;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.proyectos-1, .proyectos-2 {
+  list-style: none;
+  padding: 0;
+}
+
+.proyectos-imagen {
+  width: 80vw;
+  padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .proyectos {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 97vw;
+    padding: 0em;
+    margin: 0;
+  }
+  .proyectos-titulo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 48%;
+    text-align: center;
+  }
+  .proyectos-texto {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+  }
+  .proyectos-nombre {
+    font-size: 5em;
+  }
+}
+
+.tecnologias {
+  padding: 0;
+  margin: 0;
+}
+
+.tecnologias-titulo {
+  border-bottom: 5px solid #039bcf;
+}
+
+.tecnologias-texto {
+  display: inline-block;
+  width: 97vw;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.tecnologias-imagen {
+  width: 10vw;
+  height: auto;
+  padding: 0.5em;
+}
+
+.tecnologias-lista, .tecnologias-1, .tecnologias-2, .tecnologias-3, .tecnologias-4, .tecnologias-5, .tecnologias-6 {
+  list-style: none;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .tecnologias {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 97vw;
+  }
+  .tecnologias-titulo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 48%;
+    text-align: center;
+  }
+  .tecnologias-texto {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 48%;
+    text-align: center;
+  }
+  .tecnologias-nombre {
+    font-size: 5em;
+  }
+  .tecnologias-imagen {
+    width: 10vw;
+  }
+}
+
+.formulario {
+  position: relative;
+  margin: 5em 0 0 0;
+}
+
+.formulario-titulo {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 0.5em;
+  text-shadow: 2px 2px 4px white;
+}
+
+.formulario-datos {
+  width: 90vw;
+  font-family: 'Baloo Tammudu 2', cursive;
+  color: #0f3d4c;
+  font-weight: bold;
+}
+
+.formulario-boton {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.formulario-enviar {
+  border: 2px solid #2E4053;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  width: 25vw;
+  padding: 0;
+  font-size: 1em;
+}
+
+#nombre, #apellido, #correo, #telefono, #mensaje {
+  width: 90vw;
+  border: 2px solid #2E4053;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f3d4c), to(#06a5e0));
+  background: linear-gradient(to bottom, #0f3d4c, #06a5e0);
+}
+/*# sourceMappingURL=estilo.css.map */
